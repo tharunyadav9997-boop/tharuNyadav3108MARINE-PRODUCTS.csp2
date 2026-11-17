@@ -1,0 +1,130 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Marine Products | Home</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body class="bg-gray-50 text-gray-800">
+
+    <div class="max-w-7xl mx-auto px-4 py-12 fade-in">
+        <div id="home-buttons-grid" class="grid grid-cols-2 md:grid-cols-4 gap-6">
+            <button onclick="showSubSection('sec-intro')" class="bg-white p-6 rounded-xl shadow-lg hover:shadow-2xl hover:scale-105 transition transform duration-300 border-t-4 border-aqua text-center h-32 text-xl font-bold text-ocean">Introduction</button>
+            <button onclick="showSubSection('sec-w1')" class="bg-white p-6 rounded-xl shadow-lg hover:shadow-2xl hover:scale-105 transition transform duration-300 border-t-4 border-sea text-center h-32 text-xl font-bold text-ocean">Week 1</button>
+            <button onclick="showSubSection('sec-w2')" class="bg-white p-6 rounded-xl shadow-lg hover:shadow-2xl hover:scale-105 transition transform duration-300 border-t-4 border-aqua text-center h-32 text-xl font-bold text-ocean">Week 2</button>
+            <button onclick="showSubSection('sec-w3')" class="bg-white p-6 rounded-xl shadow-lg hover:shadow-2xl hover:scale-105 transition transform duration-300 border-t-4 border-sea text-center h-32 text-xl font-bold text-ocean">Week 3</button>
+            <button onclick="showSubSection('sec-w4')" class="bg-white p-6 rounded-xl shadow-lg hover:shadow-2xl hover:scale-105 transition transform duration-300 border-t-4 border-aqua text-center h-32 text-xl font-bold text-ocean">Week 4</button>
+            <button onclick="showSubSection('sec-w5')" class="bg-white p-6 rounded-xl shadow-lg hover:shadow-2xl hover:scale-105 transition transform duration-300 border-t-4 border-sea text-center h-32 text-xl font-bold text-ocean">Week 5</button>
+            <button onclick="showSubSection('sec-w6')" class="bg-white p-6 rounded-xl shadow-lg hover:shadow-2xl hover:scale-105 transition transform duration-300 border-t-4 border-aqua text-center h-32 text-xl font-bold text-ocean">Week 6</button>
+            <button onclick="showSubSection('sec-conclusion')" class="bg-white p-6 rounded-xl shadow-lg hover:shadow-2xl hover:scale-105 transition transform duration-300 border-t-4 border-sea text-center h-32 text-xl font-bold text-ocean">Conclusion</button>
+        </div>
+
+        <!-- Intro Section -->
+        <div id="sec-intro" class="sub-section hidden fade-in bg-white p-8 rounded-xl shadow-lg border-l-8 border-aqua">
+            <h2 class="text-3xl font-bold text-ocean mb-4">Introduction to Marine Products</h2>
+            <img src="images/image.143.webp" onclick="changeImage(this)" onerror="this.src='https://placehold.co/800x400/0f172a/ffffff?text=Click+to+Change+Photo'" class="w-full h-64 object-cover rounded-lg mb-6 cursor-pointer" title="Click to upload image">
+            <p class="text-gray-700 leading-relaxed mb-4">The marine products community refers to the network of industries, businesses, and individuals involved in the production, distribution, and consumption of marine-based products. With the global population rising, traditional wild-catch fishing is no longer sufficient to meet the demand for high-quality protein. This has given rise to the "Blue Economy," which emphasizes the sustainable use of ocean resources for economic growth, improved livelihoods, and jobs while preserving the health of the ocean ecosystem.</p>
+            <p class="text-gray-700 leading-relaxed mb-4">Key sectors include <b>Marine Food Products</b> (aquaculture and wild fisheries), <b>Marine Biotechnology</b> (extracting bioactive compounds for pharmaceuticals), and <b>Marine Energy Products</b>. Engaging in this community service project allows us to understand the biological realities of aquaculture and the developmental needs of coastal communities dependent on these waters.</p>
+            <button onclick="backToHomeGrid()" class="mt-4 bg-ocean text-white px-6 py-2 rounded-full hover:bg-aqua transition">← Back to Menu</button>
+        </div>
+
+        <!-- Week 1 Section -->
+        <div id="sec-w1" class="sub-section hidden fade-in bg-white p-8 rounded-xl shadow-lg border-l-8 border-sea">
+            <h2 class="text-3xl font-bold text-ocean mb-4">Week 1: Introduction to Aqua Farming</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
+                <img src="images/image 3.jpeg" onclick="changeImage(this)" onerror="this.src='https://placehold.co/400x300/06b6d4/ffffff?text=Click+to+Change+Photo'" class="w-full h-48 object-cover rounded-lg shadow-md hover:scale-105 transition cursor-pointer">
+                <img src="images/image 2 - Copy.jpeg" onclick="changeImage(this)" onerror="this.src='https://placehold.co/400x300/14b8a6/ffffff?text=Click+to+Change+Photo'" class="w-full h-48 object-cover rounded-lg shadow-md hover:scale-105 transition cursor-pointer">
+            </div>
+            <p class="text-gray-700 leading-relaxed mb-4">During the first week, we focused on understanding aqua farming. Aqua farming (or aquaculture) involves cultivating freshwater and saltwater populations under controlled conditions. Unlike commercial fishing which relies on harvesting wild fish, aquaculture allows for the manipulation of variables like water quality, temperature, and feeding rates to maximize yield.</p>
+            <p class="text-gray-700 leading-relaxed mb-4">Theoretically, aquaculture acts as a highly efficient bio-reactor. Marine organisms convert feed into body mass much more efficiently than terrestrial animals like cows or pigs, meaning they have a very low carbon footprint and a high protein retention rate. We visited local markets and interacted with fishermen to bridge the gap between this theoretical efficiency and the real-world economics of seafood vending.</p>
+            <button onclick="backToHomeGrid()" class="mt-4 bg-ocean text-white px-6 py-2 rounded-full hover:bg-sea transition">← Back to Menu</button>
+        </div>
+
+        <!-- Week 2 Section -->
+        <div id="sec-w2" class="sub-section hidden fade-in bg-white p-8 rounded-xl shadow-lg border-l-8 border-aqua">
+            <h2 class="text-3xl font-bold text-ocean mb-4">Week 2: Pond Structure & Maintenance</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
+                <img src="images/image 1.jpeg" onclick="changeImage(this)" onerror="this.src='https://placehold.co/400x300/0f172a/ffffff?text=Click+to+Change+Photo'" class="w-full h-48 object-cover rounded-lg shadow-md hover:scale-105 transition cursor-pointer">
+                <img src="images/aqua-farming.jpg - Copy.jpeg" onclick="changeImage(this)" onerror="this.src='https://placehold.co/400x300/06b6d4/ffffff?text=Click+to+Change+Photo'" class="w-full h-48 object-cover rounded-lg shadow-md hover:scale-105 transition cursor-pointer">
+            </div>
+            <p class="text-gray-700 leading-relaxed mb-4">In week two, we studied the ecological and structural principles of ponds. The optimum physical size of a fish pond is rectangular, varying from 2 to 4 hectares with a depth of 5 to 6 feet. This specific depth is crucial for allowing sunlight penetration to encourage beneficial phytoplankton growth, while avoiding deep, anoxic (oxygen-depleted) dead zones at the pond bottom.</p>
+            <p class="text-gray-700 leading-relaxed mb-4">Water chemistry is the most critical component. We learned that the ideal soil is sandy clay, maintaining a neutral pH between 6.5 and 8.5. If the water becomes too acidic or alkaline, it disrupts the osmoregulation of the fish. Furthermore, power supply for aerators is mandatory; aerators agitate the water surface to facilitate the diffusion of atmospheric oxygen into the water, driving the nitrogen cycle and preventing toxic ammonia buildup.</p>
+            <button onclick="backToHomeGrid()" class="mt-4 bg-ocean text-white px-6 py-2 rounded-full hover:bg-aqua transition">← Back to Menu</button>
+        </div>
+
+        <!-- Week 3 Section -->
+        <div id="sec-w3" class="sub-section hidden fade-in bg-white p-8 rounded-xl shadow-lg border-l-8 border-sea">
+            <h2 class="text-3xl font-bold text-ocean mb-4">Week 3: Diseases, Feeds, and Chemicals</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
+                <img src="images/image 5.jpeg" onclick="changeImage(this)" onerror="this.src='https://placehold.co/400x300/14b8a6/ffffff?text=Click+to+Change+Photo'" class="w-full h-48 object-cover rounded-lg shadow-md hover:scale-105 transition cursor-pointer">
+                <img src="images/image 9.jpeg" onclick="changeImage(this)" onerror="this.src='https://placehold.co/400x300/0f172a/ffffff?text=Click+to+Change+Photo'" class="w-full h-48 object-cover rounded-lg shadow-md hover:scale-105 transition cursor-pointer">
+            </div>
+            <p class="text-gray-700 leading-relaxed mb-4">This week covered pathology and nutritional biochemistry. We studied bacterial infections like 'Red Pest', which manifests as bloody streaks leading to ulceration. Disease in aquaculture typically follows the "Host-Pathogen-Environment" triangle: pathogens only cause severe outbreaks when the fish (host) is stressed by poor water quality (environment).</p>
+            <p class="text-gray-700 leading-relaxed mb-4">To support immune health and rapid growth, commercial aqua feeds are formulated with precise macro-nutrients. These pelleted feeds contain a balanced mix of essential amino acids, lipids, and vitamins sourced from fishmeal, soybean meal, and meat/bone meal. We also explored biosecurity and chemical water treatments used to control fouling, scaling, and harmful algae blooms without harming the cultured stock.</p>
+            <button onclick="backToHomeGrid()" class="mt-4 bg-ocean text-white px-6 py-2 rounded-full hover:bg-sea transition">← Back to Menu</button>
+        </div>
+
+        <!-- Week 4 Section -->
+        <div id="sec-w4" class="sub-section hidden fade-in bg-white p-8 rounded-xl shadow-lg border-l-8 border-aqua">
+            <h2 class="text-3xl font-bold text-ocean mb-4">Week 4: Identifying Fish Diseases</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
+                <img src="images/image11.jpeg" onclick="changeImage(this)" onerror="this.src='https://placehold.co/400x300/06b6d4/ffffff?text=Click+to+Change+Photo'" class="w-full h-48 object-cover rounded-lg shadow-md hover:scale-105 transition cursor-pointer">
+                <img src="images/image 7.jpeg" onerror="this.src='https://placehold.co/400x300/14b8a6/ffffff?text=Click+to+Change+Photo'" class="w-full h-48 object-cover rounded-lg shadow-md hover:scale-105 transition cursor-pointer">
+            </div>
+            <p class="text-gray-700 leading-relaxed mb-4">In week four, we applied diagnostic techniques to identify specific diseases affecting pond populations. We focused heavily on Head and Lateral Line Erosion (HLLE), a condition characterized by pitting on the face and lateral line. Theoretically, this is often linked to a deficiency in Vitamins C and D, calcium, and phosphorus, exacerbated by poor water quality or stray voltage in the water.</p>
+            <p class="text-gray-700 leading-relaxed mb-4">We also identified issues like "Pop-eye" (exophthalmia) caused by gas embolisms or bacterial infections, and swim bladder diseases which disrupt the fish's hydrostatic balance. Understanding the physiological signs of these diseases is critical, as early detection prevents the rapid transmission of pathogens across the densely populated pond environment.</p>
+            <button onclick="backToHomeGrid()" class="mt-4 bg-ocean text-white px-6 py-2 rounded-full hover:bg-aqua transition">← Back to Menu</button>
+        </div>
+
+        <!-- Week 5 Section -->
+        <div id="sec-w5" class="sub-section hidden fade-in bg-white p-8 rounded-xl shadow-lg border-l-8 border-sea">
+            <h2 class="text-3xl font-bold text-ocean mb-4">Week 5: Implementing Treatments</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
+                <img src="images/image14.jpeg" onclick="changeImage(this)" onerror="this.src='https://placehold.co/400x300/0f172a/ffffff?text=Click+to+Change+Photo'" class="w-full h-48 object-cover rounded-lg shadow-md hover:scale-105 transition cursor-pointer">
+                <img src="images/image 4.jpeg" onclick="changeImage(this)" onerror="this.src='https://placehold.co/400x300/06b6d4/ffffff?text=Click+to+Change+Photo'" class="w-full h-48 object-cover rounded-lg shadow-md hover:scale-105 transition cursor-pointer">
+            </div>
+            <p class="text-gray-700 leading-relaxed mb-4">Week five was dedicated to therapeutic interventions and pharmacology in aquaculture. We implemented a 10 to 30-minute chemical bath using potassium permanganate (KMnO4). Theoretically, KMnO4 acts as a strong oxidizing agent, destroying the cell walls of external parasites and bacteria on contact without lingering toxically in the water column.</p>
+            <p class="text-gray-700 leading-relaxed mb-4">To treat internal and nutritional issues like HLLE, we adjusted the dietary regimens. We incorporated flake foods enriched with vitamins and leafy greens to correct nutritional deficits. We learned that treating swim bladder issues often requires a holistic approach: improving water quality, altering diet to prevent constipation, and occasionally administering targeted antibiotics like amoxicillin for bacterial gas buildup.</p>
+            <button onclick="backToHomeGrid()" class="mt-4 bg-ocean text-white px-6 py-2 rounded-full hover:bg-sea transition">← Back to Menu</button>
+        </div>
+
+        <!-- Week 6 Section -->
+        <div id="sec-w6" class="sub-section hidden fade-in bg-white p-8 rounded-xl shadow-lg border-l-8 border-aqua">
+            <h2 class="text-3xl font-bold text-ocean mb-4">Week 6: Growth, Feeding, Harvesting</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
+                <img src="images/aqua-farming.jpg - Copy.jpeg" onclick="changeImage(this)" onerror="this.src='https://placehold.co/400x300/14b8a6/ffffff?text=Click+to+Change+Photo'" class="w-full h-48 object-cover rounded-lg shadow-md hover:scale-105 transition cursor-pointer">
+                <img src="images/image8.jpeg" onclick="changeImage(this)" onerror="this.src='https://placehold.co/400x300/0f172a/ffffff?text=Click+to+Change+Photo'" class="w-full h-48 object-cover rounded-lg shadow-md hover:scale-105 transition cursor-pointer">
+            </div>
+            <p class="text-gray-700 leading-relaxed mb-4">The final week focused on growth bioenergetics and harvesting protocols. Growth is fundamentally a bio-energetic process defined by a change in mass over time. We studied the Feed Conversion Ratio (FCR), learning that feeding at 10% of the biomass initially, then reducing to 3% as prawns mature, optimizes metabolic absorption and minimizes water-polluting waste.</p>
+            <p class="text-gray-700 leading-relaxed mb-4">For successful molting and growth in crustaceans, water salinity must be maintained around 3-4 ppt with strict calcium hardness levels (below 150 mg/l CaCO3). Finally, we examined harvesting logistics: "Cull-harvesting" removes the fastest-growing individuals periodically to reduce density stress and allow smaller prawns room to grow, while "Drain harvesting" is a complete, end-of-cycle collection.</p>
+            <button onclick="backToHomeGrid()" class="mt-4 bg-ocean text-white px-6 py-2 rounded-full hover:bg-aqua transition">← Back to Menu</button>
+        </div>
+
+        <!-- Conclusion Section -->
+        <div id="sec-conclusion" class="sub-section hidden fade-in bg-white p-8 rounded-xl shadow-lg border-l-8 border-sea">
+            <h2 class="text-3xl font-bold text-ocean mb-4">Conclusion & Mini Project</h2>
+            <p class="text-gray-700 leading-relaxed mb-4">To conclude our project, we focused on <b>Sustainable Aquaculture Practices</b>. As global demand for marine products increases, traditional open-pond methods are putting strain on local ecosystems through nutrient loading and habitat destruction. The future of marine products lies in advanced, ecologically balanced systems.</p>
+            <p class="text-gray-700 leading-relaxed mb-4">Key innovations include <b>Recirculating Aquaculture Systems (RAS)</b>, which utilize mechanical and biological filtration to reuse up to 99% of water, drastically cutting down on pollution. Furthermore, <b>Integrated Multi-Trophic Aquaculture (IMTA)</b> represents a biomimetic approach: farming fed species (like fish) alongside extractive species (like seaweeds or sea cucumbers) that filter out the organic waste. Adopting these advanced theoretical models ensures that aquaculture remains economically profitable, socially responsible, and environmentally regenerative for generations to come.</p>
+            <button onclick="backToHomeGrid()" class="mt-4 bg-ocean text-white px-6 py-2 rounded-full hover:bg-sea transition">← Back to Menu</button>
+        </div>
+    </div>
+</main>
+
+<footer class="bg-ocean text-white py-8 text-center mt-auto">
+    <p class="text-gray-400">© 2026 Marine Products CSP.</p>
+</footer>
+
+<script src="js/script.js"></script>
+

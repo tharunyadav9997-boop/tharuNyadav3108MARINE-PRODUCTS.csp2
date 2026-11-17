@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marine Products | Methods</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <nav class="bg-ocean text-white shadow-lg sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16 items-center">
+                <div class="flex-shrink-0 font-bold text-xl tracking-wider text-aqua">🌊 MARINE PRODUCTS</div>
+                <div class="hidden md:flex space-x-6">
+                    <a href="index.html" class="hover:text-aqua transition duration-300 font-medium">Home</a>
+                    <a href="project.html" class="hover:text-aqua transition duration-300 font-medium">Project</a>
+                    <a href="methods.html" class="text-aqua transition duration-300 font-bold">Methods</a>
+                    <a href="rotation.html" class="hover:text-aqua transition duration-300 font-medium">Resources</a>
+                    <a href="about.html" class="hover:text-aqua transition duration-300 font-medium">About Us</a>
+                </div>
+                <div class="md:hidden flex items-center">
+                    <button onclick="toggleMobileMenu()" class="text-white hover:text-aqua focus:outline-none">☰ Menu</button>
+                </div>
+            </div>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden bg-ocean pb-4 px-4 shadow-inner">
+            <a href="index.html" class="block py-2 hover:text-aqua">Home</a>
+            <a href="project.html" class="block py-2 hover:text-aqua">Project</a>
+            <a href="methods.html" class="block py-2 text-aqua">Methods</a>
+            <a href="rotation.html" class="block py-2 hover:text-aqua">Resources</a>
+            <a href="about.html" class="block py-2 hover:text-aqua">About Us</a>
+        </div>
+    </nav>
+
+    <main class="min-h-screen py-12 fade-in">
+        <div class="max-w-5xl mx-auto px-4">
+            <h1 class="text-4xl font-bold text-center text-ocean mb-10">Processing Methods</h1>
+            <div class="bg-white rounded-xl shadow-xl overflow-hidden flex flex-col md:flex-row">
+                <div class="md:w-1/2 p-8">
+                    <h3 class="text-2xl font-bold text-aqua mb-4">How are they processed?</h3>
+                    <p class="text-gray-700 mb-4">Marine products are highly perishable. Proper processing is essential to increase their shelf life and maintain nutritional value.</p>
+                    <ul class="space-y-3 text-gray-600">
+                        <li><strong class="text-ocean">1. Sun Drying:</strong> The oldest method, removing moisture using sunlight.</li>
+                        <li><strong class="text-ocean">2. Salting:</strong> Adding salt to draw out water and stop bacterial growth.</li>
+                        <li><strong class="text-ocean">3. Freezing:</strong> Rapidly lowering temperature to keep products fresh.</li>
+                        <li><strong class="text-ocean">4. Canning:</strong> Sealing products in airtight containers and heating them.</li>
+                    </ul>
+                </div>
+                <div class="md:w-1/2 bg-sea p-8 text-white flex items-center justify-center">
+                    <p class="text-xl text-center italic font-semibold">"Proper processing prevents waste and ensures food security for millions worldwide."</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-ocean text-white py-8 text-center mt-auto">
+        <p class="text-gray-400">© 2026 Marine Products CSP.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

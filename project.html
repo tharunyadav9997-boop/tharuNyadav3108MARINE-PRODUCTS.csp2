@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marine Products | Project</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <nav class="bg-ocean text-white shadow-lg sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16 items-center">
+                <div class="flex-shrink-0 font-bold text-xl tracking-wider text-aqua">🌊 MARINE PRODUCTS</div>
+                <div class="hidden md:flex space-x-6">
+                    <a href="index.html" class="hover:text-aqua transition duration-300 font-medium">Home</a>
+                    <a href="project.html" class="text-aqua transition duration-300 font-bold">Project</a>
+                    <a href="methods.html" class="hover:text-aqua transition duration-300 font-medium">Methods</a>
+                    <a href="rotation.html" class="hover:text-aqua transition duration-300 font-medium">Resources</a>
+                    <a href="about.html" class="hover:text-aqua transition duration-300 font-medium">About Us</a>
+                </div>
+                <div class="md:hidden flex items-center">
+                    <button onclick="toggleMobileMenu()" class="text-white hover:text-aqua focus:outline-none">☰ Menu</button>
+                </div>
+            </div>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden bg-ocean pb-4 px-4 shadow-inner">
+            <a href="index.html" class="block py-2 hover:text-aqua">Home</a>
+            <a href="project.html" class="block py-2 text-aqua">Project</a>
+            <a href="methods.html" class="block py-2 hover:text-aqua">Methods</a>
+            <a href="rotation.html" class="block py-2 hover:text-aqua">Resources</a>
+            <a href="about.html" class="block py-2 hover:text-aqua">About Us</a>
+        </div>
+    </nav>
+
+    <main class="min-h-screen py-12 fade-in">
+        <div class="max-w-7xl mx-auto px-4">
+            <h1 class="text-4xl font-bold text-center text-ocean mb-10">Marine Products Project</h1>
+            
+            <div class="grid md:grid-cols-2 gap-8 mb-12">
+                <div class="bg-white p-8 rounded-xl shadow-md border-t-4 border-aqua">
+                    <h3 class="text-2xl font-bold text-ocean mb-3">Project Summary</h3>
+                    <p class="text-gray-600">This project aims to analyze the availability, processing, and economic importance of marine products in local coastal communities.</p>
+                </div>
+                <div class="bg-white p-8 rounded-xl shadow-md border-t-4 border-sea">
+                    <h3 class="text-2xl font-bold text-ocean mb-3">Project Objectives</h3>
+                    <ul class="list-disc list-inside text-gray-600 space-y-2">
+                        <li>Identify common marine resources.</li>
+                        <li>Study processing and preservation methods.</li>
+                        <li>Understand economic benefits to locals.</li>
+                        <li>Promote sustainable harvesting.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Photo Gallery -->
+            <h2 class="text-3xl font-bold text-center text-ocean mb-8">CSP PHOTO GALLERY</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+                <div class="rounded-xl overflow-hidden shadow-lg border-2 border-white">
+                    <img src="images/image 2 - Copy.jpeg" onclick="changeImage(this)" onerror="this.src='https://placehold.co/600x400/06b6d4/ffffff?text=Click+to+Upload'" class="w-full h-48 object-cover hover:scale-110 transition duration-300 cursor-pointer">
+                </div>
+                <div class="rounded-xl overflow-hidden shadow-lg border-2 border-white">
+                    <img src="images/aqua-farming.jpg - Copy.jpeg" onclick="changeImage(this)" onerror="this.src='https://placehold.co/600x400/14b8a6/ffffff?text=Click+to+Upload'" class="w-full h-48 object-cover hover:scale-110 transition duration-300 cursor-pointer">
+                </div>
+                <div class="rounded-xl overflow-hidden shadow-lg border-2 border-white">
+                    <img src="images/image11.jpeg" onclick="changeImage(this)" onerror="this.src='https://placehold.co/600x400/0f172a/ffffff?text=Click+to+Upload'" class="w-full h-48 object-cover hover:scale-110 transition duration-300 cursor-pointer">
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-ocean text-white py-8 text-center mt-auto">
+        <p class="text-gray-400">© 2026 Marine Products CSP.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
